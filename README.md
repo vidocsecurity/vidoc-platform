@@ -29,6 +29,8 @@ This is what security automation looks like in the 21st century.
 
 We belive that embedding Javascript as a string is not the right way to do it. We can do better. More examples in the [javascript-examples](javascript-examples) directory.
 
+**You can read Javascript? So, you can write Vidoc modules. Yes it is that simple.**
+
 **Example of a Javascript modules:**
 
 ```javascript
@@ -43,7 +45,7 @@ export const metadata = {
 };
 
 // Module that checks if S3 bucket is writable - uses multiple protocols
-const Module = async (target) => {
+const Module = async function(target) {
   // resolve CNAME record
   const cnameRecord = await dns.resolve(target, {
     type: 'CNAME'
