@@ -11,14 +11,14 @@ We are huge fans of community made tools - but we also think that they can be gr
 
 ## Core Vidoc features
 
-- **Zero setup.** You don't need to setup anything. Just write your modules and run them. All results in one place.
-- **Speed.** We can run Modules against 1,000,000s of hosts in matter of minutes due to our distributed architecture.
+- **Zero setup.** Just write your modules and run them. All results in one place.
+- **Speed.** You can run Modules against thousands of hosts in matter of minutes.
 - **YAML modules compatible with Nuclei\*.** You can use all Nuclei modules with Vidoc.
-- **[Passive Modules](#passive-module).** Think of it as grep on ALL responses that were received
-from the target (even if they were received by other modules).
-- **[Javascript modules](#our-take-on-javascript-modules). (BETA)** Real Javascript, not string embedded in YAML.
-    - **An embedded JavaScript engine. (BETA)** The performance of Go, the scripting familiarity of JavaScript.
+- **[Passive Modules](#passive-module).** Think of it as grep on ALL responses that were received from the target (even if they were received by other modules).
+- **[Javascript modules](#our-take-on-javascript-modules). (BETA)**
+    - **An embedded JavaScript engine. (BETA)** Real Javascript, not string embedded in YAML.
     - **Multiple Protocol support.** HTTP, DNS, WebSockets, gRPC...
+    - **Speed.** The performance of Go
 - **Improved DSL.** We validate and help you write our DSL.
 
 \* You can use our importer to convert Nuclei modules to Vidoc modules.
