@@ -1,0 +1,25 @@
+info:
+  name: Somfy Login Panel - Detect
+  severity: informative
+  tags:
+    - panel
+    - login
+
+requests:
+  - path:
+      - /m_login.htm
+    method: GET
+    matchers:
+      - part: all
+        type: word
+        words:
+          - Home motion by Somfy
+        negative: false
+        condition: and
+      - part: all
+        type: status
+        status:
+          - 200
+        negative: false
+        condition: and
+    matchers-condition: and

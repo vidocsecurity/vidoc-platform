@@ -1,5 +1,6 @@
-import { vidoc } from './defs'
+import { http, html, report } from '../vidoc'
 
+// Module metadata
 export const metadata = {
   id: 'extract-all-javascript-files',
   name: 'Extract all Javascript files',
@@ -7,13 +8,13 @@ export const metadata = {
   severity: 'informative',
 };
 
-// Simplicity of Javascript and speed of Go.
-const ExtractAllJavascriptFiles = async (target) => {
+// Extract all Javascript files from target page
+const Module = async (target) => {
   // send simple HTTP request to target
-  const response = await vidoc.http.get(target);
+  const response = await http.get(target);
 
   // parse HTML response
-  const doc = vidoc.html.parse(response.body);
+  const doc = html.parse(response.body);
 
   // find all <script> tags
   const scripts = doc.findAll('script');
@@ -24,7 +25,8 @@ const ExtractAllJavascriptFiles = async (target) => {
   });
 
   // report the script sources
-  vidoc.report.metadata(target, scriptSources);
+  // all of them will be displayed in the report
+  report.metadata(target, scriptSources);
 }
 
-export default ExtractAllJavascriptFiles
+export default Module

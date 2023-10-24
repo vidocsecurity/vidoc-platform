@@ -1,0 +1,19 @@
+info:
+  name: Strider CD Panel - Detect
+  severity: informative
+  tags:
+    - panel
+    - cicd
+    - oss
+    - stridercd
+    - strider
+
+passive:
+  matchers:
+    - part: all
+      type: word
+      words:
+        - "Strider: Brilliant Continuous Deployment"
+      negative: false
+      condition: and
+  matchers-condition: and
