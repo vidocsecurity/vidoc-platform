@@ -1,12 +1,13 @@
-# Vidoc
+<p align="center"><a href="https://k6.io/"><img src="assets/new-cover-with-logo.png" alt="k6" /></a></p>
 
-We are a **security automation platform**. We automate Recon and Vulnerability Scanning.
+<h3 align="center">Security automation platform</h3>
+<h4 align="center">One-click Recon, Vulnerability Scanning automation, custom security checks, for security teams and pros. No setup needed</h4>
 
-Vulnerability Scanning is powered by Modules. Module is a concept heavily inspired by Nuclei. We took the concept and we improved it. **We wrote our own module engine.** (we might opensource it)
+Vidoc is a platform that handles the infrastructure for you. Scanning is powered by Modules. We improved on the known concept of Templates. **We wrote our own module engine.** (we might opensource it)
 
 ## Vision
 
-We are huge fans of community made tools - but we also think that they can be greately improved. We want to make tools that are easy to use, fast and scalable. **We will handle the infrastructure - you will handle the security.**
+We are huge fans of community made tools - but we also think that they can be greately improved. We want to make tools that are easy to use, fast and scalable. **We handle the infrastructure - you will handle the security.**
 
 ## Core Vidoc features
 
