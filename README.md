@@ -3,7 +3,7 @@
 <h3 align="center">Security automation platform</h3>
 <h4 align="center">One-click Recon, Vulnerability Scanning automation, custom security checks, for security teams and pros. No setup needed</h4>
 
-Vidoc is a platform that handles the infrastructure for you. Scanning is powered by Modules. We improved on the known concept of Templates. **We wrote our own module engine.** (we might opensource it)
+Vidoc is a platform that handles the infrastructure for you. Scanning is powered by Modules. We improved on the known concept of Templates and **we wrote our own module engine.** (we might opensource it;) )
 
 ## Vision
 
