@@ -12,7 +12,7 @@ We are huge fans of community made tools - but we also think that they can be gr
 ## Core Vidoc features
 
 - **Zero setup.** You don't need to setup anything. Just write your modules and run them. All results in one place.
-- **Speed.** We can scan 1,000,000s of hosts in matter of minutes due to our distributed architecture.
+- **Speed.** We can run Modules against 1,000,000s of hosts in matter of minutes due to our distributed architecture.
 - **YAML modules compatible with Nuclei\*.** You can use all Nuclei modules with Vidoc.
 - **[Passive Modules](#passive-module).** Think of it as grep on ALL responses that were received
 from the target (even if they were received by other modules).
@@ -27,9 +27,9 @@ This is what security automation looks like in the 21st century.
 
 # Our take on Javascript modules
 
-We belive that embedding Javascript as a string is not the right way to do it. We can do better. More examples in the [javascript-examples](javascript-examples) directory.
+The performance of Go, the scripting familiarity of JavaScript.
 
-**You can read Javascript? So, you can write Vidoc modules. Yes it is that simple.**
+**We belive that if you can read Javascript, so you can write Vidoc modules. Yes, it is that simple.**
 
 **Example of a Javascript modules:**
 
@@ -70,6 +70,8 @@ const Module = async function(target) {
 
 export default Module
 ```
+
+More examples in the [javascript-examples](javascript-examples) directory.
 
 # Passive module
 
