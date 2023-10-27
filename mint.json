@@ -53,7 +53,7 @@
       },
       {
         "group": "Features",
-        "pages": ["features/javascript-modules", "features/module-scan", "features/passive-modules", "features/recon"]
+        "pages": ["features/recon", "features/module-scan", "features/javascript-modules", "features/passive-modules" ]
       },
       {
         "group": "Usecases",
