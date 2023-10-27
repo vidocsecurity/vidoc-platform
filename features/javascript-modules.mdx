@@ -16,9 +16,11 @@ We belive that if you can read Javascript, so you can write Vidoc modules. **Yes
 - **Speed.** Javascript is only used for scripting, the rest is written in Go.
 - **Typescript support.** Write your modules with type safety.
 
-## Example
+## Multi protocol module
 
-```javascript Multi Protocol module
+Example of module that checks if S3 bucket is writable.
+
+```javascript multi_protocol.js
 import { http, dns, report } from '@vidoc/modules'
 
 // Module metadata
@@ -51,6 +53,91 @@ const Module = async function(target) {
   if(response.status === 200) {
     report.issue(target, 'S3 bucket is writable');
   }
+}
+
+export default Module
+```
+
+## Extracting data from responses
+
+Example of module that extracts urls from HTTP response.
+
+```javascript extract_urls.js
+import { http, html, report } from '@vidoc/modules';
+
+// Module metadata
+export const metadata = {
+  id: 'extract-all-javascript-files',
+  name: 'Extract all Javascript files',
+  description: 'Extract all Javascript files from target',
+  severity: 'informative',
+};
+
+// Extract all Javascript files from target page
+const Module = async (target) => {
+  // send simple HTTP request to target
+  const response = await http.get(target);
+
+  // parse HTML response
+  const doc = html.parse(response.body);
+
+  // find all <script> tags
+  const scripts = doc.findAll('script');
+
+  // extract src attribute from each script tag
+  const scriptSources = scripts.map((script) => {
+    return script.attr('src');
+  });
+
+  // report the script sources
+  // all of them will be displayed in the report
+  report.metadata(target, scriptSources);
+}
+
+export default Module
+```
+
+## Fuzzing
+
+Example of module that fuzzes HTTP requests.
+
+```javascript fuzzing.js
+import { http, match, report } from '../vidoc'
+
+// Module metadata
+export const metadata = {
+  id: 'detect-exposed-settings-file',
+  name: 'Detect exposed settings file',
+  description: 'Detect exposed settings file',
+  severity: 'critical',
+};
+
+// Simple HTTP request to detect exposed settings file
+const Module = async (target) => {
+  // create HTTP request template
+  // it can be used for bruteforcing, fuzzing, etc.
+  const template = http
+    .newTemplate()
+    .method('GET')
+    // define list of paths to check
+    .path([
+      '/settings.php.bak',
+      '/settings.php.dist',
+      '/settings.php.old',
+    ]);
+
+  const responses = await http.send(target, {
+    template
+  });
+
+  // check each response
+  responses.forEach((response) => {
+    // check if response contains DB_NAME
+    if (response.status === 200 && response.body.includes('DB_NAME')) {
+      // report issue
+      report.issue(target, 'Settings file is exposed');
+    }
+  });
 }
 
 export default Module
