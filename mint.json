@@ -36,6 +36,11 @@
   ],
   "anchors": [
     {
+      "name": "Try Vidoc for free",
+      "icon": "rocket",
+      "url": "https://www.vidocsecurity.com"
+    },
+    {
       "name": "Community",
       "icon": "discord",
       "url": "https://discord.gg/TtFrkvjn"
