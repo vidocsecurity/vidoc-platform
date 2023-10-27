@@ -1,68 +1,81 @@
 {
-    "$schema": "https://mintlify.com/schema.json",
-    "name": "Vidoc",
-    "logo": {
-      "dark": "/logo/dark.png",
-      "light": "/logo/light.png"
+  "$schema": "https://mintlify.com/schema.json",
+  "name": "Vidoc",
+  "logo": {
+    "dark": "/logo/dark.png",
+    "light": "/logo/light.png"
+  },
+  "favicon": "/favicon.png",
+  "colors": {
+    "primary": "#eb4076",
+    "light": "#eb4076",
+    "dark": "#eb4076",
+    "background": {
+      "dark": "#0c090a"
     },
-    "favicon": "/favicon.png",
-    "colors": {
-      "primary": "#eb4076",
-      "light": "#eb4076",
-      "dark": "#eb4076",
-      "background": {
-        "dark": "#0c090a"
-      },
-      "anchors": {
-        "from": "#eb4076",
-        "to": "#FF4580"
-      }
-    },
-    "topbarLinks": [
-      {
-        "name": "Support",
-        "url": "mailto:contact@vidocsecurity.com"
-      }
-    ],
-    "topbarCtaButton": {
-      "name": "Try Vidoc for free",
-      "url": "https://www.vidocsecurity.com"
-    },
-    "tabs": [
-      {
-        "name": "API Reference",
-        "url": "api-reference"
-      }
-    ],
-    "anchors": [
-      {
-        "name": "Community",
-        "icon": "discord",
-        "url": "https://discord.gg/TtFrkvjn"
-      },
-      {
-        "name": "Blog",
-        "icon": "newspaper",
-        "url": "https://blog.vidocsecurity.com"
-      }
-    ],
-    "navigation": [
-      {
-        "group": "Get Started",
-        "pages": ["overview", "quickstart"]
-      },
-      {
-        "group": "Features",
-        "pages": ["features/recon", "features/module-scan", "features/automated-scan", "features/javascript-modules", "features/passive-modules" ]
-      },
-      {
-        "group": "Usecases",
-        "pages": ["usecases/for-bugbounty"]
-      }
-    ],
-    "footerSocials": {
-      "twitter": "https://twitter.com/vidocsecurity",
-      "github": "https://github.com/vidocsecurity",
-      "linkedin": "https://www.linkedin.com/company/vidoc-security-lab/"
+    "anchors": {
+      "from": "#eb4076",
+      "to": "#FF4580"
     }
+  },
+  "topbarLinks": [
+    {
+      "name": "Support",
+      "url": "mailto:contact@vidocsecurity.com"
+    }
+  ],
+  "topbarCtaButton": {
+    "name": "Try Vidoc for free",
+    "url": "https://www.vidocsecurity.com"
+  },
+  "tabs": [
+    {
+      "name": "API Reference",
+      "url": "api-reference"
+    }
+  ],
+  "anchors": [
+    {
+      "name": "Community",
+      "icon": "discord",
+      "url": "https://discord.gg/TtFrkvjn"
+    },
+    {
+      "name": "Blog",
+      "icon": "newspaper",
+      "url": "https://blog.vidocsecurity.com"
+    }
+  ],
+  "navigation": [
+    {
+      "group": "Get Started",
+      "pages": [
+        "overview",
+        "quickstart"
+      ]
+    },
+    {
+      "group": "Features",
+      "pages": [
+        "features/recon",
+        "features/module-scan",
+        "features/automated-scan",
+        "features/ai-insights",
+        "features/ai-report",
+        "features/javascript-modules",
+        "features/passive-modules"
+      ]
+    },
+    {
+      "group": "Usecases",
+      "pages": [
+        "usecases/for-bugbounty"
+      ]
+    }
+  ],
+  "footerSocials": {
+    "twitter": "https://twitter.com/vidocsecurity",
+    "github": "https://github.com/vidocsecurity",
+    "linkedin": "https://www.linkedin.com/company/vidoc-security-lab/"
   }
+}
