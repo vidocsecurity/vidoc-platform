@@ -49,23 +49,15 @@
     "navigation": [
       {
         "group": "Get Started",
-        "pages": ["overview", "quickstart", "development"]
+        "pages": ["overview", "quickstart"]
       },
       {
-        "group": "Essentials",
-        "pages": ["essentials/markdown", "essentials/code", "essentials/images", "essentials/settings", "essentials/navigation"]
+        "group": "Features",
+        "pages": ["features/javascript-modules", "features/module-scan", "features/passive-modules", "features/recon"]
       },
       {
-        "group": "API Documentation",
-        "pages": ["api-reference/introduction"]
-      },
-      {
-        "group": "Endpoint Examples",
-        "pages": [
-          "api-reference/endpoint/get",
-          "api-reference/endpoint/create",
-          "api-reference/endpoint/delete"
-        ]
+        "group": "Usecases",
+        "pages": ["usecases/for-bugbounty"]
       }
     ],
     "footerSocials": {
