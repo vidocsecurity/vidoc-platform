@@ -49,7 +49,7 @@
     "navigation": [
       {
         "group": "Get Started",
-        "pages": ["introduction", "quickstart", "development"]
+        "pages": ["overview", "quickstart", "development"]
       },
       {
         "group": "Essentials",
