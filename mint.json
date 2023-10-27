@@ -1,0 +1,73 @@
+{
+    "$schema": "https://mintlify.com/schema.json",
+    "name": "Vidoc",
+    "logo": {
+      "dark": "/logo/dark.svg",
+      "light": "/logo/light.svg"
+    },
+    "favicon": "/favicon.svg",
+    "colors": {
+      "primary": "#eb4076",
+      "light": "#07C983",
+      "dark": "#0D9373",
+      "anchors": {
+        "from": "#0D9373",
+        "to": "#07C983"
+      }
+    },
+    "topbarLinks": [
+      {
+        "name": "Support",
+        "url": "mailto:contact@vidocsecurity.com"
+      }
+    ],
+    "topbarCtaButton": {
+      "name": "Try Vidoc for free",
+      "url": "https://www.vidocsecurity.com"
+    },
+    "tabs": [
+      {
+        "name": "API Reference",
+        "url": "api-reference"
+      }
+    ],
+    "anchors": [
+      {
+        "name": "Community",
+        "icon": "discord",
+        "url": "https://discord.gg/TtFrkvjn"
+      },
+      {
+        "name": "Blog",
+        "icon": "newspaper",
+        "url": "https://blog.vidocsecurity.com"
+      }
+    ],
+    "navigation": [
+      {
+        "group": "Get Started",
+        "pages": ["introduction", "quickstart", "development"]
+      },
+      {
+        "group": "Essentials",
+        "pages": ["essentials/markdown", "essentials/code", "essentials/images", "essentials/settings", "essentials/navigation"]
+      },
+      {
+        "group": "API Documentation",
+        "pages": ["api-reference/introduction"]
+      },
+      {
+        "group": "Endpoint Examples",
+        "pages": [
+          "api-reference/endpoint/get",
+          "api-reference/endpoint/create",
+          "api-reference/endpoint/delete"
+        ]
+      }
+    ],
+    "footerSocials": {
+      "twitter": "https://twitter.com/vidocsecurity",
+      "github": "https://github.com/vidocsecurity",
+      "linkedin": "https://www.linkedin.com/company/vidoc-security-lab/"
+    }
+  }
