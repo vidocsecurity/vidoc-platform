@@ -46,6 +46,11 @@
       "url": "https://discord.gg/TtFrkvjn"
     },
     {
+      "name": "Ambasaador Program",
+      "icon": "user",
+      "url": "/ambassador-program"
+    },
+    {
       "name": "Blog",
       "icon": "newspaper",
       "url": "https://blog.vidocsecurity.com"
