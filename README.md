@@ -1,4 +1,4 @@
-<p align="center"><a href="https://k6.io/"><img src="assets/new-cover-with-logo.png" alt="k6" /></a></p>
+<p align="center"><a href="https://k6.io/"><img src="assets/cover.png" alt="k6" /></a></p>
 
 <h3 align="center">Security automation platform</h3>
 <h4 align="center">One-click Recon, Vulnerability Scanning automation, custom security checks, for security teams and pros. No setup needed</h4>
