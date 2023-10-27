@@ -1,39 +1,43 @@
 ---
 title: Introduction
-description: 'Welcome to the home of your new documentation'
+description: 'Security automation platform'
 ---
 
 <img
   className="block dark:hidden"
-  src="/images/hero-light.svg"
+  src="/assets/new-cover-with-logo.png"
   alt="Hero Light"
 />
 <img
   className="hidden dark:block"
-  src="/images/hero-dark.svg"
+  src="/assets/new-cover-with-logo.png"
   alt="Hero Dark"
 />
 
-## Setting up
+## TL;DR;
 
-The first step to world-class documentation is setting up your editing environnments.
+One-click Recon, Vulnerability Scanning automation, custom security checks, for security teams and pros. No setup needed
 
-<CardGroup cols={2}>
-  <Card
-    title="Edit Your Docs"
-    icon="pen-to-square"
-    href="https://mintlify.com/docs/quickstart"
-  >
-    Get your docs set up locally for easy development
-  </Card>
-  <Card
-    title="Preview Changes"
-    icon="image"
-    href="https://mintlify.com/docs/development"
-  >
-    Preview your changes before you push to make sure they're perfect
-  </Card>
-</CardGroup>
+## What is Vidoc
+
+Vidoc is a platform that handles the infrastructure for you. Scanning is powered by Modules. We improved on the known concept of Templates and **we wrote our own module engine.** (we might opensource it;) )
+
+## Core Vidoc features
+
+- **Zero setup.** Just write your modules and run them. All results in one place.
+- **Speed.** You can run Modules against thousands of hosts in matter of minutes.
+- **IP rotation.** Each Module Scan is executed by a pool of workers that rotate IPs.
+- **YAML modules compatible with Nuclei\*.** You can use all Nuclei modules with Vidoc.
+- **[Passive Modules](#passive-module).** Think of it as grep on ALL responses that were received from the target (even if they were received by other modules).
+- **[Javascript modules](#our-take-on-javascript-modules). (BETA)**
+    - **An embedded JavaScript engine. (BETA)** Real Javascript, not string embedded in YAML.
+    - **Multiple Protocol support.** HTTP, DNS, WebSockets, gRPC...
+    - **Speed.** The performance of Go
+- **Improved DSL.** We validate and help you write our DSL.
+
+\* You can use our importer to convert Nuclei modules to Vidoc modules.
+
+This is what security automation looks like in the 21st century.
 
 ## Make it yours
 
@@ -41,18 +45,25 @@ Update your docs to your brand and add valuable content for the best user conver
 
 <CardGroup cols={2}>
   <Card
-    title="Customize Style"
+    title="Recon"
     icon="palette"
-    href="https://mintlify.com/docs/settings/global"
+    href="/docs/recon"
   >
-    Customize your docs to your company's colors and brands
+    Get started with Vidoc and learn how to automate your Recon
   </Card>
   <Card
-    title="Reference APIs"
-    icon="code"
-    href="https://mintlify.com/docs/api-playground/openapi"
+    title="Module Scans"
+    icon="palette"
+    href="/docs/module-scans"
   >
-    Automatically generate endpoints from an OpenAPI spec
+    Scan your targets with Vidoc's modules
+  </Card>
+  <Card
+    title="Passive Modules"
+    icon="code"
+    href="/docs/passive-modules"
+  >
+    Learn how to use Vidoc to automate your passive modules
   </Card>
   <Card
     title="Add Components"
@@ -60,12 +71,5 @@ Update your docs to your brand and add valuable content for the best user conver
     href="https://mintlify.com/docs/components/accordion"
   >
     Build interactive features and designs to guide your users
-  </Card>
-  <Card
-    title="Get Inspiration"
-    icon="stars"
-    href="https://mintlify.com/showcase"
-  >
-    Check out our showcase of our favorite documentation
   </Card>
 </CardGroup>
