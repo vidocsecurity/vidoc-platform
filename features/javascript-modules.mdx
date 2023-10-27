@@ -3,6 +3,52 @@ title: Javascript Modules (BETA)
 description: 'Learn about Javascript Modules'
 ---
 
-# Javascript Modules [BETA]
+## Our take on Javascript modules
 
-TODO
+The performance of Go, the scripting familiarity of JavaScript.
+
+**We belive that if you can read Javascript, so you can write Vidoc modules. Yes, it is that simple.**
+
+Features:
+- **An embedded JavaScript engine. (BETA)** Real Javascript, not string embedded in YAML.
+- **Multiple Protocol support.** HTTP, DNS, WebSockets, gRPC...
+
+## Example
+
+```javascript Multi Protocol module
+import { http, dns, report } from '../vidoc'
+
+// Module metadata
+export const metadata = {
+  id: 'multi-protocol',
+  name: 'Multi Protocol',
+  description: 'Check s3 bucket misconfigurations',
+  severity: 'medium',
+};
+
+// Module that checks if S3 bucket is writable - uses multiple protocols
+const Module = async function(target) {
+  // resolve CNAME record
+  const cnameRecord = await dns.resolve(target, {
+    type: 'CNAME'
+  });
+
+  // check if its an S3 bucket
+  if(!cnameRecord.value.includes('s3.aws')) {
+    return;
+  }
+
+  // try writing to bucket and check if its writable
+  const response = await http.put(target, {
+    path: '/test213213213',
+    body: 'test',
+  });
+
+  // check if response is 200
+  if(response.status === 200) {
+    report.issue(target, 'S3 bucket is writable');
+  }
+}
+
+export default Module
+```
