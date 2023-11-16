@@ -72,7 +72,7 @@
       ]
     },
     {
-      "group": "Usecases",
+      "group": "Use cases",
       "pages": [
         "usecases/for-security-team",
         "usecases/for-bugbounty"
