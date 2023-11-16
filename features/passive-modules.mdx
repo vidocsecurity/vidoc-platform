@@ -3,8 +3,32 @@ title: Passive Modules
 description: 'Passive modules are modules that do not require any user interaction to run.'
 ---
 
-# Passive Modules
+## What is Passive Module?
 
-TODO
+It is like `grep` for ANY response. Passive Module does not send any request to the target, it just looks for the pattern in the response of the request that is already sent by other modules.
 
-- you can think of it as grep on ANY respone
+Example of Passive Module:
+
+```yaml passive_module.yaml
+info:
+  name: Detect Nginx
+  severity: informative
+  tags:
+    - tech
+
+global-matchers:
+  matchers:
+    - type: word
+      part: all
+      words:
+        - Nginx
+      condition: and
+  matchers-condition: and
+```
+
+## When to use Passive Module?
+
+Passive Modules are best for:
+- Detecting the technology used by the target
+- Detecting the version of the technology used by the target
+- Secret detection
