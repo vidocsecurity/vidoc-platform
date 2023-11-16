@@ -74,6 +74,7 @@
     {
       "group": "Usecases",
       "pages": [
+        "usecases/for-security-team",
         "usecases/for-bugbounty"
       ]
     },

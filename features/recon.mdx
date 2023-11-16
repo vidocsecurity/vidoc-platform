@@ -3,6 +3,59 @@ title: Recon
 description: 'Information gathering and reconnaissance'
 ---
 
-## Recon
+<video
+  controls
+  className="w-full aspect-video"
+  src="/assets/recon.mp4"
+></video>
 
-TODO
+## What is Recon on Vidoc?
+
+<Accordion title="Reconnaissance TL;DR;">
+  Recon (reconnaissance) is a phase bug bounty hunting and security research, which involves gathering as much information as possible about the target system or application.
+</Accordion>
+
+TL;DR;
+- We execute Recon every 24h
+- We allow you to search all the data on our platform
+- We will notify you if we find new subdomains, web servers or open ports
+- We fingerprint web servers and detect technologies
+
+Vidoc does the information gathering for you so **you can focus on finding interesting subdomains, web servers and ports instead of spending time on writing bash scripts**.
+
+## What information Vidoc gathers?
+
+- Subdomains
+    - 50+ Paid and free sources
+    - Detection of wildcard subdomains
+- DNS Records (refreshed every 5 hours)
+    - A
+    - AAAA
+    - CNAME
+    - MX
+    - NS
+    - PTR
+    - SOA
+    - SRV
+    - TXT
+- Web servers
+    - Fingerprinting
+    - Technology detection
+    - HTTP headers
+- Open ports
+    - Service detection
+    - TLS certificate detection
+    - Misconfigurations in TLS certificates
+
+## What is the usecase of Recon?
+
+You can use Modules to detect misconfigurations, vulnerabilities, and other security issues on your targets. The powerful thing about Modules is that you can write your own Modules and execute them on your targets.
+
+## How to use Recon?
+
+1. Go click "Scanning" -> "Module library" -> "Scan now"
+2. Select modules you want to execute on your targets
+3. Click "Execute"
+4. Select target or targets from Recon
+5. Click "Execute"
+6. Wait for results:)

@@ -3,8 +3,43 @@ title: Automated Module Scan (BETA)
 description: 'Schedule your Module Scan to run automatically'
 ---
 
-<Warning>This feature is currently in BETA. If you wish to use it, please contact us at <a href="mailto:contact@vidocsecurity.com">contact</a> or https://twitter.com/kannthu1</Warning>
+<video
+  controls
+  className="w-full aspect-video"
+  src="/assets/autonmated-scans.mp4"
+></video>
 
-# Automated Module Scan
+## What is Automated Module Scan?
 
-TODO
+Automated Module Scan is a feature that allows you to schedule your Module Scan to run automatically on single target or targets from Recon.
+You will get a notification when your scan finds something interesting.
+
+You can schedule your Module Scan to run:
+- every 30min
+- every hour
+- every 6 hours
+- every 12 hours
+- every day
+- every week
+- every month
+
+## What is the usecase of Automated Module Scan?
+
+Automated Module Scan is useful when you want to run a Module Scan on a target or targets from Recon on a regular basis.
+For example, you can schedule your Module Scan to check if your target is vulnerable to a new vulnerability or common misconfiguration.
+
+You can create automated scan that will detect:
+- Subdomain takeovers
+- Common misconfigurations
+- Vulnerabilities
+- Exposed services
+
+For more, check out our article about [Security Automation](https://blog.vidocsecurity.com/blog/2022-summary-how-we-made-120k-bug-bounty-in-a-year/)
+
+## How to create new Automated Scan?
+
+1. Go to "Scanning" -> "Automation" and click "Create new automated scan"
+2. Provide a name for your Automated Scan
+3. Select modules that you want to run
+4. Select a target or targets from Recon or provide URL to a target
+5. Done! Your Automated Scan will run on a regular basis:)
