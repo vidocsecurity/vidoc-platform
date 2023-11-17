@@ -19,7 +19,7 @@
     }
   },
   "metadata": {
-    "og:image": "/assets/cover.png"
+    "og:image": "https://mintlify.s3-us-west-1.amazonaws.com/vidocsecuritylab/assets/cover.png"
   },
   "topbarLinks": [
     {
