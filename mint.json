@@ -31,12 +31,6 @@
     "name": "Try Vidoc for free",
     "url": "https://www.vidocsecurity.com"
   },
-  "tabs": [
-    {
-      "name": "API Reference",
-      "url": "api-reference"
-    }
-  ],
   "anchors": [
     {
       "name": "Try Vidoc for free",
