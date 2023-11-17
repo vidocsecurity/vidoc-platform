@@ -18,6 +18,9 @@
       "to": "#FF4580"
     }
   },
+  "metadata": {
+    "og:image": "/assets/cover.png"
+  },
   "topbarLinks": [
     {
       "name": "Support",
