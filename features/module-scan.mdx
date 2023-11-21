@@ -31,3 +31,18 @@ You can use Modules to detect misconfigurations, vulnerabilities, and other secu
 4. Select target or targets from Recon
 5. Click "Execute"
 6. Wait for results:)
+
+## How to identify Vidoc requests?
+
+We will add a custom header to all requests sent by Vidoc.
+
+The headers will be:
+```
+X-Vidoc-Scan-Id: <uuid>
+X-Vidoc-Security: <project_id>; https://docs.vidocsecurity.com/scanning
+```
+
+You can allowlist these headers in your WAF or other security tools:
+- you can check if `X-Vidoc-Security` header is present and contains your project id.
+
+To setup allowlist, send us a quick email to [Support](mailto:contact@vidocsecurity.com) and we will help you with that.
