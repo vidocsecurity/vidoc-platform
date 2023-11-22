@@ -1,0 +1,56 @@
+---
+title: (BETA) Security scanning for LLM (GTP, Bard, etc) integrations
+description: 'Test for Prompt injections, Rate limiting, Jailbreaking, Data extraction & privacy'
+---
+
+<img
+  className="block dark:hidden"
+  src="/assets/llm.png"
+  alt="Hero Light"
+/>
+<img
+  className="hidden dark:block"
+  src="/assets/llm.png"
+  alt="Hero Dark"
+/>
+
+## TL;DR;
+
+Vidoc checks if your LLM integrration can fail in a way you don't want to. We probe for hallucination, data leakage, prompt injections, rate limiting, jailbreaking, privacy issues and more.
+
+Setup once and get continuous security testing for your LLM integration. We support ANY LLM, including open source models.
+
+Security issues we can detect:
+- Prompt injections
+- Toxicity generation
+- Misconfigured rate limiting
+- Jailbreaking
+- Data extraction
+- Privacy issues
+- Security of Agent tools (APIs that your agent has access to)
+
+## How to setup scanning?
+
+Vidoc LLM integration scanning is easy to setup.
+
+1. Create a `vidoc.yaml` file in the root of your project.
+
+```yaml
+app:
+  env: prod
+  integrationEndpoint:
+    url: https://my-llm-integration.com/api/v1/chat
+    body: '{"message": "{{message}}"}'
+    auth:
+      type: basic
+      username: my-username
+      password: my-password
+```
+
+2. Run `vidoc scan` in your terminal.
+3. Get a report in your terminal and in your Vidoc dashboard.
+
+
+## Would like to learn more?
+
+Please contact us at [contact@vidocsecurity.com](mailto:contact@vidocsecurity.com)) or book at https://cal.com/team/vidoc/demo
